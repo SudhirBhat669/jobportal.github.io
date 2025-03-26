@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+   <!-- Font Awesome CDN -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <section class="flex">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <a href="/" class="logo"><i class="fas fa-briefcase"></i>Job Portal</a>
+            <nav class="navbar">
+               <a href="home.html">home</a>
+               <a href="about.html">about</a>
+               <a href="jobs.html">all jobs</a>
+               <a href="contact.html">contact</a>
+               <a href="login.html">account</a>
+            </nav>
+               <a href="#" class="btn">Post Job</a>
+       </section>
+        
+        
+    </header>   
+
+<!-- Job Categories Section -->
+<section class="category">
+    <h1 class="heading">job categories</h1>
+    <div class="box-container">
+        <a href="#" class="box">
+            <i class="fas fa-code"></i>
+            <div>
+                <h3>development</h3>
+                <span>2000 jobs</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <i class="fas fa-paint-brush"></i>
+            <div>
+                <h3>designer</h3>
+                <span>500 jobs</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <div>
+                <h3>teacher</h3>
+                <span>1500 jobs</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <i class="fas fa-bullhorn"></i>
+            <div>
+                <h3>marketing</h3>
+                <span>2000 jobs</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <i class="fas fa-tools"></i>
+            <div>
+                <h3>service</h3>
+                <span>3100 jobs</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <i class="fas fa-cogs"></i>
+            <div>
+                <h3>engineer</h3>
+                <span>400 jobs</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <i class="fas fa-chart-line"></i>
+            <div>
+                <h3>finance</h3>
+                <span>1000 jobs</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <i class="fas fa-user"></i>
+            <div>
+                <h3>labour</h3>
+                <span>4000 jobs</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <i class="fa-brands fa-android"></i>
+            <div>
+                <h3>android</h3>
+                <span>100 jobs</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <i class="fa-solid fa-database"></i>
+            <div>
+                <h3>database</h3>
+                <span>200 jobs</span>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- Job Section -->
+ <section class="jobs-container">
+    <h1 class="heading">latest jobs</h1>
+    <div class="box-container">
+        <div class="box">
+                <div class="company">
+                    <img src="{{ url_for('static', filename='images/html-5.png') }}" alt="">
+                <div>
+                    <h3>IT infosys co</h3>
+                    <p>2 days ago</p>
+                </div>
+                </div>
+                <h3 class="job-title">senior web developer</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i><span>Bangalore, india</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i><span>25k -40k</span>
+                    </p>
+                    <p><i class="fas fa-briefcase"></i><span>part time</span>
+                    </p>
+                    <p><i class="fas fa-clock"></i><p>full time</p>
+                    </p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn">view details</a>
+                    <button class="submit far fa-heart" name="save">
+                        <span class="visually-hidden">Save this job</span>
+                    </button>
+                </div>
+        </div>
+
+        <div class="box">
+            <div class="company">
+                <img src="{{ url_for('static', filename='images/css.png') }}" alt="">
+            <div>
+                <h3>All Media Ltd</h3>
+                <p>2 days ago</p>
+            </div>
+            </div>
+            <h3 class="job-title">Qualified developer</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span>Mumbai, india</span></p>
+            <div class="tags">
+                <p><i class="fas fa-indian-rupee-sign"></i><span>9000</span>
+                </p>
+                <p><i class="fas fa-briefcase"></i><span>full time</span>
+                </p>
+                <p><i class="fas fa-clock"></i><span>flexible shifts</span>
+                </p>
+            </div>
+            <div class="flex-btn">
+                <a href="view_job.html" class="btn">view details</a>
+                <button class="submit far fa-heart" name="save">
+                    <span class="visually-hidden">Save this job</span></button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="company">
+                <img src="{{ url_for('static', filename='images/Icons1.jpg') }}" alt="">
+            <div>
+                <h3>Software solutions</h3>
+                <p>posted today</p>
+            </div>
+            </div>
+            <h3 class="job-title">Javascript developer</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span>Mumbai, india</span></p>
+            <div class="tags">
+                <p><i class="fas fa-indian-rupee-sign"></i><span>10k -25k</span>
+                </p>
+                <p><i class="fas fa-briefcase"></i><span>internship</span>
+                </p>
+                <p><i class="fas fa-clock"></i><span>night shift</span>
+                </p>
+            </div>
+            <div class="flex-btn">
+                <a href="view_job.html" class="btn">view details</a>
+                <button class="submit far fa-heart" name="save">
+                    <span class="visually-hidden">Save this job</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="company">
+                <img src="{{ url_for('static', filename='images/sass.png') }}" alt="">
+            <div>
+                <h3>IT world</h3>
+                <p>5 days ago</p>
+            </div>
+            </div>
+            <h3 class="job-title">Junior Frontend</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span>Mumbai, india</span></p>
+            <div class="tags">
+                <p><i class="fas fa-indian-rupee-sign"></i><span>20k-50k</span>
+                </p>
+                <p><i class="fas fa-briefcase"></i><span>contract</span>
+                </p>
+                <p><i class="fas fa-clock"></i><span>night shift</span>
+                </p>
+            </div>
+            <div class="flex-btn">
+                <a href="view_job.html" class="btn">view details</a>
+                <button class="submit far fa-heart" name="save">
+                    <span class="visually-hidden">Save this job</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="company">
+                <img src="{{ url_for('static', filename='images/html-5.png') }}" alt="">
+            <div>
+                <h3>Mass Media</h3>
+                <p>2 days ago</p>
+            </div>
+            </div>
+            <h3 class="job-title">PHP developer</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span>Mumbai, india</span></p>
+            <div class="tags">
+                <p><i class="fas fa-indian-rupee-sign"></i><span>30k - 1k</span>
+                </p>
+                <p><i class="fas fa-briefcase"></i><span>fresher</span>
+                </p>
+                <p><i class="fas fa-clock"></i><span>fixed shift</span>
+                </p>
+            </div>
+            <div class="flex-btn">
+                <a href="view_job.html" class="btn">view details</a>
+                <button class="submit far fa-heart" name="save">
+                    <span class="visually-hidden">Save this job</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="company">
+                <img src="{{ url_for('static', filename='images/html-5.png') }}" alt="">
+            <div>
+                <h3>Info statics</h3>
+                <p>2 days ago</p>
+            </div>
+            </div>
+            <h3 class="job-title">Junior assistance</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span>Bangalore, india</span></p>
+            <div class="tags">
+                <p><i class="fas fa-indian-rupee-sign"></i><span>5000</span>
+                </p>
+                <p><i class="fas fa-briefcase"></i><span>temporary</span>
+                </p>
+                <p><i class="fas fa-clock"></i><span>flexible shift</span>
+                </p>
+            </div>
+            <div class="flex-btn">
+                <a href="view_job.html" class="btn">view details</a>
+                <button class="submit far fa-heart" name="save">
+                    <span class="visually-hidden">Save this job</span>
+                </button>                
+            </div>
+        </div>
+    </div>
+
+    <div class="centered-content">
+        <a href="jobs.html" class="btn">view</a>
+    </div>
+</section>
+
+<!--Quick Links Section-->
+<footer class="footer">
+    <section class="grid">
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="home.html"><i class="fas fa-angle-right"></i>home</a>
+            <a href="about.html"><i class="fas fa-angle-right"></i>about</a>
+            <a href="jobs.html"><i class="fas fa-angle-right"></i>all jobs</a>
+            <a href="contact.html"><i class="fas fa-angle-right"></i>contact</a>
+            <a href="#"><i class="fas fa-angle-right"></i>filter search</a>               
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#"><i class="fas fa-angle-right"></i>account</a>
+            <a href="login.html"><i class="fas fa-angle-right"></i>login</a>
+            <a href="register.html"><i class="fas fa-angle-right"></i>register</a>
+            <a href="#"><i class="fas fa-angle-right"></i>post job</a>
+            <a href="#"><i class="fas fa-angle-right"></i>dashboard</a>               
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+            <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+            <a href="#"><i class="fab fa-youtube"></i>youtube</a>
+        </div>
+    </section>
+    <div class="credit">&copy; copyright @ 2025 by <span>company name</span> | all rights reserved!</div>
+</footer>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script> 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
